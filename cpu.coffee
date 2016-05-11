@@ -1,6 +1,6 @@
-command: "ESC=`printf \"\e\"`; ps -A -o %cpu | awk '{s+=$1} END {printf(\"0%.2f\",s/8);}'"
+command: "uptime | awk '{print $8}' | sed 's/,//g'"
 
-refreshFrequency: 2000 # ms
+refreshFrequency: 4000 # ms
 
 render: (output) ->
   "cpu <span>#{output}</span>"
