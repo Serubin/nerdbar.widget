@@ -8,11 +8,11 @@ render: (output) ->
 style: """
   -webkit-font-smoothing: antialiased
   color: #F0F8F7
-  font: 11px Osaka-Mono
+  font: 12px roboto mono
   height: 16px
   left: 10px
   overflow: hidden
   text-overflow: ellipsis
-  top: 6px
-  width: 500px
+  top: 3px
+  width: 900px
 """

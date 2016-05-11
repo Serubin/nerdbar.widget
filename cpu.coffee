@@ -1,4 +1,4 @@
-command: "ESC=`printf \"\e\"`; ps -A -o %cpu | awk '{s+=$1} END {printf(\"%.2f\",s/8);}'"
+command: "ESC=`printf \"\e\"`; ps -A -o %cpu | awk '{s+=$1} END {printf(\"0%.2f\",s/8);}'"
 
 refreshFrequency: 2000 # ms
 
@@ -8,9 +8,10 @@ render: (output) ->
 style: """
   -webkit-font-smoothing: antialiased
   color: #F0F8F7
-  font: 12px Osaka-Mono
+  font: 12px roboto mono
   right: 262px
-  top: 6px
+  top: 3px
   span
+    font: 11px roboto mono
     color: #2E73F5
 """

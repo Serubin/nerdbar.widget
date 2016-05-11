@@ -8,9 +8,10 @@ render: (output) ->
 style: """
   -webkit-font-smoothing: antialiased
   color: #F0F8F7
-  font: 12px Osaka-Mono
+  font: 12px roboto mono
   right: 192px
-  top: 6px
+  top: 3px
   span
+    font: 11px roboto mono
     color: #2E73F5
 """
