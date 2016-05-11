@@ -7,10 +7,12 @@ render: (output) ->
 
 style: """
   -webkit-font-smoothing: antialiased
-  font: 10px Osaka-Mono
+  font: 12px Osaka-Mono
   top: 4px
   right: 145px
-  color: #FABD2F
+  color: #F0F8F7
+  i
+    font-size:11px
   span
     color: #9C9486
 """
