@@ -1,4 +1,4 @@
-command: "uptime | awk '{print $8}' | sed 's/,//g'"
+command: "uptime | awk '{print $(NF-2)}' | sed 's/,//g'"
 
 refreshFrequency: 4000 # ms
 
