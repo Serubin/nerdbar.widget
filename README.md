@@ -1,8 +1,12 @@
-# nerdbar.widget
+# Bar
 
-![Screenshot](screenshot.png)
+Personal [Übersicht](http://tracesof.net/uebersicht/) system information bar for use with [Kwm](https://github.com/koekeishiya/kwm) window manager.
+Originally created by [herrbischoff](https://github.com/herrbischoff), inspired by my NerdTool configuration.
+I have modified the bar since then, and updated the screenshot.
 
-Übersicht system information bar for use with kwm window manager. Inspired by screenshots of the [kwm window manager](https://github.com/koekeishiya/kwm) and the [authors' NerdTool configuration](https://github.com/koekeishiya/kwm/issues/8#issuecomment-166608067).
+![img](https://cloud.githubusercontent.com/assets/6175959/16150759/6822282e-3499-11e6-9a2e-5c61af2caba7.png)
+
+The original widget created by *herrbischoff* can be found [here](https://github.com/herrbischoff/nerdbar.widget).
 
 In the screenshot above I'm using the excellent [Hack typeface](https://github.com/chrissimpkins/hack). The version here uses Osaka Mono — in spirit of the original.
 
@@ -13,5 +17,5 @@ Make sure you have [Übersicht](http://tracesof.net/uebersicht/) installed.
 Then clone this repository.
 
 ```bash
-git clone https://github.com/herrbischoff/nerdbar.widget $HOME/Library/Application\ Support/Übersicht/widgets/nerdbar.widget
+git clone https://github.com/koekeishiya/nerdbar.widget $HOME/Library/Application\ Support/Übersicht/widgets
 ```
