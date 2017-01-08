@@ -4,7 +4,7 @@ refreshFrequency: 10000
 
 render: (output) ->
   """
-  <link rel="stylesheet" href="./assets/font-awesome/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="./nerdbar.widget/assets/font-awesome/css/font-awesome.min.css" />
   <div class="cal"
     <span></span>
     <span class="icon"></span>
@@ -19,7 +19,7 @@ update: (output, el) ->
 
 style: """
   -webkit-font-smoothing: antialiased
-  color: #d5c4a1
+  color: #f0f8f7
   font: 10px Input
   right: 70px
   top: 6px

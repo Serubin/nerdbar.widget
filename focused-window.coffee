@@ -1,10 +1,12 @@
-command: "echo $(/usr/local/bin/kwmc query space active tag)"
+command: """
+    echo $(/usr/local/bin/kwmc query space active tag | awk '{ s = ""; for (i = 2; i <= NF; i++) s = s " " $i; print substr(s,0,125) }' )
+    """
 
 refreshFrequency: 1000 # ms
 
 render: (output) ->
   """
-  <link rel="stylesheet" href="./assets/font-awesome/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="./nerdbar.widget/assets/font-awesome/css/font-awesome.min.css" />
   <div class="foc"
     <span></span>
     <span class="icon"></span>
@@ -19,7 +21,7 @@ update: (output, el) ->
 
 style: """
   -webkit-font-smoothing: antialiased
-  color: #d5c4a1
+  color: #f0f8f7
   font: 10px Input
   height: 16px
   left: 10px

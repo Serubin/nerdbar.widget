@@ -4,7 +4,7 @@ refreshFrequency: 1000 # ms
 
 render: (output) ->
   """
-  <link rel="stylesheet" href="./assets/font-awesome/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="./nerdbar.widget/assets/font-awesome/css/font-awesome.min.css" />
   <div class="ac"
     <span></span>
     <span class="icon"></span>
@@ -22,19 +22,21 @@ icon: (status) =>
         "fa-home"
     else if status.substring(0, 3) == "web"
         "fa-safari"
-    else if status.substring(0, 3) == "rnd"
-        "fa-random"
-    else if status.substring(0, 5) == "games"
-        "fa-gamepad"
-    else if status.substring(0, 4) == "chat"
+    else if status.substring(0, 4) == "code"
+        "fa-code"
+    else if status.substring(0, 4) == "term"
+        "fa-terminal"
+    else if status.substring(0, 6) == "social"
         "fa-comments"
+    else if status.substring(0, 5) == "media"
+        "fa-music"
     else
         "fa-times"
 
 style: """
   -webkit-font-smoothing: antialiased
   text-align: right
-  color: #d5c4a1
+  color: #f0f8f7
   font: 10px Input
   height: 16px
   overflow: hidden
