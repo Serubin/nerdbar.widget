@@ -31,17 +31,17 @@ icon: (status) =>
     else if status.substring(0, 5) == "media"
         "fa-music"
     else
-        "fa-times"
+        "fa-circle"
 
 style: """
   -webkit-font-smoothing: antialiased
   text-align: right
-  color: #f0f8f7
+  color: #1b1b1b
   font: 10px Input
   height: 16px
   overflow: hidden
   text-overflow: ellipsis
   right: 320px
-  top: 6px
+  top: 5px
   width: 50%
 """

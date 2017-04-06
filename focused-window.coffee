@@ -1,5 +1,5 @@
 command: """
-    echo $(/usr/local/bin/kwmc query space active tag | awk '{ s = ""; for (i = 2; i <= NF; i++) s = s " " $i; print substr(s,0,125) }' )
+    echo $(/usr/local/bin/kwmc query space active tag | awk '{ s = ""; for (i = 1; i <= NF; i++) s = s " " $i; print substr(s,0,125) }' )
     """
 
 refreshFrequency: 1000 # ms
@@ -21,12 +21,12 @@ update: (output, el) ->
 
 style: """
   -webkit-font-smoothing: antialiased
-  color: #f0f8f7
+  color: #1b1b1b
   font: 10px Input
   height: 16px
   left: 10px
   overflow: hidden
   text-overflow: ellipsis
-  top: 6px
-  width: auto
+  top: 5px
+  width: 50%
 """

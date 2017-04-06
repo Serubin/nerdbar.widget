@@ -1,4 +1,4 @@
-command: "ESC=`printf \"\e\"`; ps -A -o %cpu | awk '{s+=$1} END {printf(\"%.2f\",s/8);}'"
+command: "uptime | awk -F'[a-z]:' '{ print $2}' | sed 's/,//g' | awk '{ print $1 }'"
 
 refreshFrequency: 2000 # ms
 
@@ -19,8 +19,9 @@ update: (output, el) ->
 
 style: """
   -webkit-font-smoothing: antialiased
-  color: #f0f8f7
+  color: #1b1b1b
   font: 10px Input
   right: 265px
-  top: 6px
+  top: 5px
+
 """

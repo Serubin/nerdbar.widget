@@ -33,7 +33,7 @@ icon: (output) =>
 style: """
   -webkit-font-smoothing: antialiased
   font: 10px Input
-  top: 7px
+  top: 5px
   right: 160px
-  color: #f0f8f7
+  color: #1b1b1b
 """
