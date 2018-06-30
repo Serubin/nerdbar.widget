@@ -8,7 +8,7 @@ style: """
   left: 0
   height: 22px
   width: 100%
-  background-color: rgba(255,255,255,0.70)
+  background-color: rgba(255,255,255,0.50)
   -webkit-backdrop-filter: blur(16px)
   z-index: -1
 """

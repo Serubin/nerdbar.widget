@@ -1,5 +1,5 @@
 command: """
-    echo $(/usr/local/bin/kwmc query space active tag | awk '{ s = ""; for (i = 1; i <= NF; i++) s = s " " $i; print substr(s,0,125) }' )
+    echo $(/usr/local/bin/chunkc tiling::query --window tag | awk '{ s = ""; for (i = 1; i <= NF; i++) s = s " " $i; print substr(s,0,125) }' )
     """
 
 refreshFrequency: 1000 # ms

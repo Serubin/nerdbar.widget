@@ -1,4 +1,4 @@
-command: "/usr/local/bin/kwmc query space active name"
+command: "/usr/local/bin/chunkc tiling::query --monitor id"
 
 refreshFrequency: 1000 # ms
 
