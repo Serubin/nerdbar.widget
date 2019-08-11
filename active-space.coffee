@@ -1,4 +1,6 @@
-command: "/usr/local/bin/chunkc tiling::query --monitor id"
+command: '''
+/usr/local/bin/yabai -m query --spaces | grep  '"focused":1' -B 5 | head -n 1 | sed -e 's/"index"://' | tr '\t' ' ' | tr ',' ' '
+'''
 
 refreshFrequency: 1000 # ms
 

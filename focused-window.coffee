@@ -1,6 +1,6 @@
-command: """
-    echo $(/usr/local/bin/chunkc tiling::query --window tag | awk '{ s = ""; for (i = 1; i <= NF; i++) s = s " " $i; print substr(s,0,125) }' )
-    """
+command: '''
+/usr/local/bin/yabai -m query --windows | grep '"focused":1' -B 16 | head -n 2 | sed -e 's/"app":"//' -e 's/"title":"/-  /' -e 's/",//' | tr '\n' ' ' | tr '\t' ' '
+'''
 
 refreshFrequency: 1000 # ms
 
