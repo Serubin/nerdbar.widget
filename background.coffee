@@ -9,6 +9,6 @@ style: """
   height: 22px
   width: 100%
   background-color: rgba(255,255,255,0.50)
-  -webkit-backdrop-filter: saturate(280%) blur(16px)
+  -webkit-backdrop-filter: saturate(200%) blur(2px)
   z-index: -1
 """
