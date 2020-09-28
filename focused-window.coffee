@@ -1,5 +1,5 @@
 command: '''
-/usr/local/bin/yabai -m query --windows | grep '"focused":1' -B 16 | head -n 2 | sed -e 's/"app":"//' -e 's/"title":"/-  /' -e 's/",//' | tr '\n' ' ' | tr '\t' ' '
+/usr/local/bin/timeout 10s /usr/local/bin/yabai -m query --windows 2> /dev/null | grep '"focused":1' -B 16 | head -n 2 | sed -e 's/"app":"//' -e 's/"title":"/-  /' -e 's/",//' | tr '\n' ' ' | tr '\t' ' '
 '''
 
 refreshFrequency: 1000 # ms

@@ -1,5 +1,5 @@
 command: '''
-/usr/local/bin/yabai -m query --spaces | grep  '"focused":1' -B 5 | head -n 1 | sed -e 's/"index"://' | tr '\t' ' ' | tr ',' ' '
+/usr/local/bin/timeout 10s /usr/local/bin/yabai -m query --spaces 2> /dev/null | grep  '"focused":1' -B 5 | head -n 1 | sed -e 's/"index"://' | tr '\t' ' ' | tr ',' ' '
 '''
 
 refreshFrequency: 1000 # ms
